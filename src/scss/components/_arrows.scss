@@ -1,0 +1,30 @@
+.arrow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &.left {
+        left: 0;
+        transform: rotate(180deg);
+
+        &:hover {
+            background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+        }
+    }
+
+    &.right {
+        right: 0;
+
+        &:hover {
+            background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+        }
+    }
+}
